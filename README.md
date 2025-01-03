@@ -34,24 +34,38 @@ The **Insurance Data Generator** is a Python-based tool designed to create synth
 
 ## Dataset Columns and Definitions
 Below is a detailed description of each column in the generated dataset:
-| Column Name            | Description |
-| ---------------------- | ----------- |
-| policy_id              | Unique identifier for the policy (e.g., pol-123456). |
-| inception_date         | The starting date of the policy (format: YYYY-MM-DD). |
-| expiry_date            | The ending date of the policy (format: YYYY-MM-DD). |
-| tenor_years            | The duration of the policy in years. |
-| age                    | Age of the policyholder (between 18 and 80). |
-| gender                 | Gender of the policyholder (male or female). |
-| annual_income_idr      | Annual income of the policyholder in Indonesian Rupiah (IDR). |
-| bmi                    | Body Mass Index (BMI) of the policyholder, calculated as weight (kg) / height² (m²). |
-| smoker                 | Indicates whether the policyholder is a smoker (yes or no). |
-| medical_history        | Medical history of the policyholder (none, hypertension, diabetes, heart disease, cancer). |
-| policy_coverage        | Level of insurance coverage (basic, standard, or comprehensive). |
-| total_premium_idr      | Total premium cost of the policy in IDR, calculated based on multiple factors. |
-| monthly_premium_idr    | Monthly premium cost in IDR, derived from the total premium divided by the policy's tenor in months. |
-| max_claim_amount_idr   | Maximum claimable amount in IDR, based on coverage, health, and income factors. |
-| claim_status           | Status of claims for the policy (no claim or claimed). |
-
+| Column Name             | Description                                                                                          |
+|-------------------------|------------------------------------------------------------------------------------------------------|
+| policy_id               | Unique identifier for the insurance policy.                                                          |
+| inception_date          | The date when the policy started or was issued.                                                      |
+| expiry_date             | The date when the policy ends or expires.                                                            |
+| tenor_years             | The duration of the policy in years.                                                                  |
+| age                     | The age of the policyholder at the time of the policy issuance.                                      |
+| gender                  | The gender of the policyholder (e.g., Male, Female).                                                 |
+| annual_income_idr       | The annual income of the policyholder in Indonesian Rupiah (IDR).                                    |
+| bmi                     | The Body Mass Index (BMI) of the policyholder, a measure of body fat based on height and weight.     |
+| smoker                  | Whether the policyholder is a smoker (Yes or No).                                                    |
+| medical_history         | Any relevant medical conditions or history of the policyholder (e.g., hypertension, diabetes).       |
+| policy_coverage         | The type of coverage provided by the insurance policy (e.g., life, health, critical illness).         |
+| total_premium_idr       | The total premium amount of the insurance policy in Indonesian Rupiah (IDR).                         |
+| monthly_premium_idr     | The amount the policyholder pays monthly as the premium in Indonesian Rupiah (IDR).                   |
+| max_claim_amount_idr    | The maximum amount the policyholder can claim under the policy, in Indonesian Rupiah (IDR).          |
+| claim_status            | The status of the claim (e.g., Pending, Approved, Rejected).                                         |
+| transaction_id          | Unique identifier for the transaction related to the policy.                                         |
+| transaction_date        | The date the transaction occurred (e.g., payment or update).                                          |
+| gross_premium_idr       | The total premium amount before any deductions, in Indonesian Rupiah (IDR).                          |
+| discount                | Any discounts applied to the premium amount.                                                         |
+| komisi_idr              | The commission earned by the agent or intermediary, in Indonesian Rupiah (IDR).                      |
+| premi_reas_idr          | The portion of the premium amount that is reinsured, in Indonesian Rupiah (IDR).                     |
+| komisireas_idr          | The commission paid by the reinsurer, in Indonesian Rupiah (IDR).                                     |
+| claim_id                | Unique identifier for the insurance claim.                                                           |
+| report_date             | The date when the claim report was created.                                                          |
+| process_date            | The date when the claim was processed.                                                               |
+| settlement_date         | The date when the claim settlement was made or paid out.                                             |
+| date_loss                | The date when the loss or event leading to the claim occurred.                                        |
+| cause_loss              | The reason for the claim (e.g., Death, Accident, Critical Illness).                                  |
+| claimamount_idr         | The total claim amount in Indonesian Rupiah (IDR).                                                   |
+| claim_reas_idr          | The reinsurer’s portion of the claim amount, in Indonesian Rupiah (IDR).                             |
 
 ## Dataset Example
 Here is a snippet of the generated dataset:

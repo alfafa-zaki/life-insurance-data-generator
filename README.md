@@ -14,7 +14,7 @@ The **Insurance Data Generator** is a Python-based tool designed to create synth
 1. Clone this repository:
    ```bash
    git clone https://github.com/alfafa-zaki/life-insurance-data-generator.git
-   cd insurance-data-generator
+   cd life-insurance-data-generator
    
 2. Install dependencies:
    ```bash

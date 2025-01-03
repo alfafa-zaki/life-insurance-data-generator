@@ -13,7 +13,7 @@ The **Insurance Data Generator** is a Python-based tool designed to create synth
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/insurance-data-generator.git
+   git clone https://github.com/alfafa-zaki/life-insurance-data-generator.git
    cd insurance-data-generator
    
 2. Install dependencies:
@@ -23,7 +23,7 @@ The **Insurance Data Generator** is a Python-based tool designed to create synth
 ## Usage
 1. Run the generator script:
    ```bash
-   python src/data_generator.py
+   python data_generator.py
    ```
    The script will generate a Pandas DataFrame containing the insurance data. You can export it as a CSV:
    ```python

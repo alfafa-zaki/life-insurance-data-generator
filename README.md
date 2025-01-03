@@ -23,7 +23,7 @@ The **Insurance Data Generator** is a Python-based tool designed to create synth
 ## Usage
 1. Run the generator script:
    ```bash
-   python data_generator.py
+   python insurance_data_generator.py
    ```
    The script will generate a Pandas DataFrame containing the insurance data. You can export it as a CSV:
    ```python

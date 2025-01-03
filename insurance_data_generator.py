@@ -307,3 +307,8 @@ for _, row in claimed_policies.iterrows():
         })
 
 historical_claim = pd.DataFrame(historical_claim_data)
+
+# Export Data to CSV
+life_insurance_data.to_csv('life_insurance_data.csv', index=False)
+premium_production.to_csv('premium_production.csv', index=False)
+historical_claim_df.to_csv('historical_claim.csv', index=False)

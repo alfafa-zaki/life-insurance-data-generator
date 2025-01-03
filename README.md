@@ -27,7 +27,9 @@ The **Insurance Data Generator** is a Python-based tool designed to create synth
    ```
    The script will generate a Pandas DataFrame containing the insurance data. You can export it as a CSV:
    ```python
-   life_insurance_data.to_csv('data/sample_data.csv', index=False)
+   life_insurance_data.to_csv('life_insurance_data.csv', index=False)
+   premium_production.to_csv('premium_production.csv', index=False)
+   historical_claim.to_csv('historical_claim.csv', index=False)
    ```
 
 ## Dataset Columns and Definitions
